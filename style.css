@@ -1,0 +1,25 @@
+/* Chewy is the display face across the whole game. It is served from
+   this folder — nothing is fetched from Google Fonts or any CDN. */
+@font-face {
+  font-family: 'Chewy';
+  src: url('assets/Chewy-Regular.ttf') format('truetype');
+  font-display: block;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #1D0637;
+  font-family: 'Chewy', 'Trebuchet MS', system-ui, sans-serif;
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: none;
+  touch-action: none;
+}
